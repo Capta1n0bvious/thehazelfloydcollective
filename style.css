@@ -68,14 +68,7 @@ p { margin: 0 0 1.1em; }
 .btn-outline { background: transparent; color: var(--accent); }
 .btn-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
-/* donate band + marquee */
-.donate-band { background: var(--accent); color: var(--accent-ink); text-align: center; padding: 22px 0 32px; overflow: hidden; }
-.marquee { overflow: hidden; white-space: nowrap; font-family: var(--head); font-size: clamp(1.5rem, 4.4vw, 3rem); padding: 6px 0 16px; }
-.marquee-track { display: inline-flex; gap: .6em; animation: slide 40s linear infinite; }
-.marquee-track span { display: inline-block; padding-right: .3em; }
-@keyframes slide { to { transform: translateX(-50%); } }
-.donate-band .btn-solid { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); font-size: 1.15rem; }
-@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* home sections */
 .who { text-align: center; }
@@ -121,4 +114,4 @@ p { margin: 0 0 1.1em; }
 .site-footer a { color: var(--bg); }
 .foot-note { margin-top: 1.6em; opacity: .7; font-size: .9rem; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-.site-footer :focus-visible, .donate-band :focus-visible { outline-color: #fff; }
+.site-footer :focus-visible { outline-color: #fff; }
